@@ -19,7 +19,7 @@ apk add --allow-untrusted glibc-${GLIBC_VERSION}.apk glibc-bin-${GLIBC_VERSION}.
 apk del wget
 
 # copy local files
-COPY bin/ /rrshareweb
+COPY bin/ /rrshare
 COPY root/ /
 
 # ports and volumes
