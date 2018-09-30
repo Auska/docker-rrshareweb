@@ -4,7 +4,11 @@
 mkdir -p \
 	/mnt
 
+# copy
+[[ ! -d /rrshare ]] && cp -r \
+	/defaults /rrshare
+
 # permissions
 chown -R abc:abc \
-	/rrshareweb \
+	/rrshare \
 	/mnt
