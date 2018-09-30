@@ -6,7 +6,7 @@ mkdir -p \
 
 # copy
 [[ ! -f /rrshare/rrshareweb ]] && cp -rf \
-	/defaults /rrshare
+	/defaults/* /rrshare/
 
 # permissions
 chown -R abc:abc \
