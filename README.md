@@ -24,5 +24,5 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 
 ## Versions
 
-+ **30.09.18:** Rebase to alpine linux 3.8.
++ **0.0.3:** Rebase to alpine linux 3.8.
 
