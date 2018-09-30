@@ -5,7 +5,7 @@ mkdir -p \
 	/mnt
 
 # copy
-[[ ! -d /rrshare ]] && cp -r \
+[[ ! -f /rrshare/rrshareweb ]] && cp -rf \
 	/defaults /rrshare
 
 # permissions
