@@ -10,7 +10,7 @@ docker create --name=rrshareweb \
 -e PGID=<gid> -e PUID=<uid> \
 -e TZ=<timezone> \
 -p 3001:3001 -p 6714:6714 -p 30210:30210 \
-auska/rrshareweb
+auska/docker-rrshareweb
 ```
 
 ### User / Group Identifiers
