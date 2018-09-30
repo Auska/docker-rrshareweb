@@ -4,6 +4,7 @@
 ```
 docker create --name=rrshareweb \
 -v <path to downloads>:/mnt \
+-v <path to rrshare>:/rrshare \
 -e PGID=<gid> -e PUID=<uid> \
 -e TZ=<timezone> \
 -p 3001:3001 -p 6714:6714 -p 30210:30210 \
