@@ -1,0 +1,10 @@
+#!/usr/bin/with-contenv bash
+
+# make folders
+mkdir -p \
+	/mnt
+
+# permissions
+chown -R abc:abc \
+	/rrshareweb \
+	/mnt
