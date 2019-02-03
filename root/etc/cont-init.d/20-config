@@ -7,24 +7,9 @@ mkdir -p \
 
 # copy
 if [[ -f /rrshare/rrshareweb ]]; then
-	checksum=`md5sum /rrshare/rrshareweb | cut -d " " -f 1`
-	if [[ $checksum == "c11d06f976af6f1e7b428b1f38f492cb" ]]; then
-		echo "Already the latest version"
-	elif [[ $checksum == "9ca4d0817919df08cca2b332b3df4311" ]]; then
-		echo "Already the latest version"
-	else
-		if [[ `uname -m` == "x86_64" ]]; then
-			cp -rf /defaults/x64/* /rrshare/ && echo "Install x64 ..."
-		else
-			cp -rf /defaults/x86/* /rrshare/ && echo "Install x86 ..."
-		fi
-	fi
+	echo "Already the latest version"
 else
-	if [[ `uname -m` == "x86_64" ]]; then
-		cp -rf /defaults/x64/* /rrshare/ && echo "Install x64 ..."
-	else
-		cp -rf /defaults/x86/* /rrshare/ && echo "Install x86 ..."
-	fi
+	cp -rf /defaults/* /rrshare/ && echo "Install ..."
 fi
 
 # permissions
