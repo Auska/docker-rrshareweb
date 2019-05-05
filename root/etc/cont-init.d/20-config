@@ -16,3 +16,5 @@ fi
 chown -R abc:abc \
 	/rrshare \
 	/mnt
+chmod +x /rrshare/rrshareweb
+chmod +x /rrshare/p4pclient
