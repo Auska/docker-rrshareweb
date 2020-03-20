@@ -6,7 +6,7 @@ http://blog.auska.win
 
 ```
 docker create --name=rrshareweb \
--v <path to downloads>:/mnt \
+-v <path to downloads>:/opt/work/store \
 -v <path to rrshare>:/rrshare \
 -e PGID=<gid> -e PUID=<uid> \
 -e TZ=<timezone> \
