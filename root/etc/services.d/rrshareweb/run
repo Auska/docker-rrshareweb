@@ -1,4 +1,4 @@
 #!/usr/bin/with-contenv bash
 
 exec \
-	s6-setuidgid abc /rrshare/rrshareweb > /dev/null
+	s6-setuidgid abc /rrshare/rrshareweb &> /dev/null &
