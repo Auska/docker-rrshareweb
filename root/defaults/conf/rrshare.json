@@ -5,5 +5,5 @@
     "logqueit" : false,
     "loglevel" : 1,
     "logpersistday" : 2,
-    "defaultsavepath" : "/mnt"
+    "defaultsavepath" : "/opt/work/rrshareweb/data"
 }
