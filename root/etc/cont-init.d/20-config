@@ -1,15 +1,5 @@
 #!/usr/bin/with-contenv bash
 
-# make folders
-mkdir -p /rrshare
-
-# copy
-if [[ -f /rrshare/rrshareweb ]]; then
-	echo "Already the latest version"
-else
-	tar xf /defaults/rrshareweb_linux_2.20.tar.gz -C / && echo "Install ..."
-fi
-
 # permissions
 chown -R abc:abc /rrshare
 chmod a+x /rrshare/rrshareweb

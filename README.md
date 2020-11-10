@@ -29,3 +29,4 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 
 + **0.1.1:** Rebase to alpine linux 3.8.
 + **0.1.2:** Update 2019.
++ **2.2.0:** Update 2.20.
