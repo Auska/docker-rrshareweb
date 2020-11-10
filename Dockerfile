@@ -26,4 +26,4 @@ COPY root/ /
 
 # ports and volumes
 EXPOSE 3001 6714 30210
-VOLUME /downloads
+VOLUME /opt/work/rrshareweb/data
