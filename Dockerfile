@@ -24,4 +24,4 @@ COPY root/ /
 
 # ports and volumes
 EXPOSE 3001 6714 30210
-VOLUME /mnt /rrshare
+VOLUME /media /rrshare
