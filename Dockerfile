@@ -6,7 +6,7 @@ ARG VERSION
 LABEL build_version="blog.auskai.win version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 LABEL maintainer="auska"
 
-ENV GLIBC_VERSION=2.31-r0 TZ=Asia/Shanghai
+ENV GLIBC_VERSION=2.32-r0 TZ=Asia/Shanghai
 
 RUN \
  echo "**** install packages ****" && \
@@ -16,6 +16,7 @@ RUN \
  wget "https://github.com/sgerrand/alpine-pkg-glibc/releases/download/${GLIBC_VERSION}/glibc-${GLIBC_VERSION}.apk" && \
  wget "https://github.com/sgerrand/alpine-pkg-glibc/releases/download/${GLIBC_VERSION}/glibc-bin-${GLIBC_VERSION}.apk" && \
  apk add --allow-untrusted glibc-${GLIBC_VERSION}.apk glibc-bin-${GLIBC_VERSION}.apk && \
+ rm -f glibc-${GLIBC_VERSION}.apk glibc-bin-${GLIBC_VERSION}.apk && \
  apk del wget
 
 # copy local files
