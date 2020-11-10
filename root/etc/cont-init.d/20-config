@@ -1,6 +1,9 @@
 #!/usr/bin/with-contenv bash
 
+# Modify the default path
+sed -i "s@/opt/work/rrshareweb/data@/downloads@g"
+
 # permissions
-chown -R abc:abc /rrshare
-chmod a+x /rrshare/rrshareweb
-chmod a+x /rrshare/p4pclient
+chown -R abc:abc /rrshareweb
+chmod a+x /rrshareweb/rrshareweb
+chmod a+x /rrshareweb/p4pclient
